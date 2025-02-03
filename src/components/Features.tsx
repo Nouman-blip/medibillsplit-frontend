@@ -1,4 +1,3 @@
-"use client"
 
 import { motion } from "framer-motion"
 import { FileText, Users, Shield, CreditCard, Bell, BarChartIcon as ChartBarIcon } from "lucide-react"

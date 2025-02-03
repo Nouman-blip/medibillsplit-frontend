@@ -1,4 +1,4 @@
-import { BrowserRouter, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { IconText } from "./ui/IconText"
 import { Mail, Phone, MapPin, Github, Twitter, Linkedin } from "lucide-react"
 
@@ -24,11 +24,11 @@ const Footer = () => {
             <ul className="space-y-3">
               {["Features", "Pricing", "Security", "Updates"].map((item) => (
                   <li key={item}>
-                    <BrowserRouter>
+                    
                       <Link to="#" className="text-medibill-muted hover:text-white transition-colors">
                       {item}
                       </Link>
-                    </BrowserRouter>
+                    
                   
                 </li>
               ))}
@@ -40,11 +40,11 @@ const Footer = () => {
             <ul className="space-y-3">
               {["About", "Blog", "Careers", "Press"].map((item) => (
                   <li key={item}>
-                  <BrowserRouter>
+                  
                     <Link to="#" className="text-medibill-muted hover:text-white transition-colors">
                         {item}
                     </Link>
-                  </BrowserRouter>
+                  
                 </li>
               ))}
             </ul>
@@ -55,11 +55,11 @@ const Footer = () => {
             <ul className="space-y-3">
               {["Terms", "Privacy", "HIPAA", "Cookies"].map((item) => (
                 <li key={item}>
-                  <BrowserRouter>
+                  
                       <Link to="#" className="text-medibill-muted hover:text-white transition-colors">
                       {item}
                       </Link>
-                  </BrowserRouter>
+                  
                 </li>
               ))}
             </ul>
@@ -70,11 +70,11 @@ const Footer = () => {
           <p className="text-medibill-muted text-sm mb-4 md:mb-0">© 2024 MediBillSplit. All rights reserved.</p>
           <div className="flex space-x-4">
             {[Github, Twitter, Linkedin].map((Icon, index) => (
-              <BrowserRouter>
+              
                 <Link key={index} to="#" className="text-medibill-muted hover:text-white transition-colors">
                   <Icon className="w-5 h-5" />
                 </Link>
-              </BrowserRouter>
+              
             ))}
           </div>
         </div>

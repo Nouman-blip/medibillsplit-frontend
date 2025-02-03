@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { FileText, Users, CreditCard, Bell, ChevronDown, Shield } from "lucide-react"
+import { Link } from "react-router-dom"
 
 const ProcessCard = ({ icon: Icon, title, description, className }:any) => (
   <motion.div
@@ -78,7 +79,9 @@ const Hero = () => {
                 Start Your 30-Day Free Trial
               </Button>
               <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/10">
-                Watch 2-Minute Demo
+                  <Link to='/DemoPage'>
+                     Watch product Demo
+                  </Link>
               </Button>
             </div>
             <p className="text-sm text-medibill-muted">No credit card required. Cancel anytime.</p>
