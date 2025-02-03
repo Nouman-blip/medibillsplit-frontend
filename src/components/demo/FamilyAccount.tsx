@@ -34,7 +34,7 @@ export function FamilyAccount({ familyData }: FamilyAccountProps) {
           animate={{ opacity: 1 }}
           transition={{ staggerChildren: 0.2, delayChildren: 0.3 }}
         >
-          {familyData.members.map((member, index) => (
+          {familyData.members.map((member) => (
             <motion.div
               key={member.name}
               initial={{ x: -50, opacity: 0 }}
