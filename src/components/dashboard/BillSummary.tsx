@@ -1,6 +1,6 @@
-"use client";
 
-import { useState } from "react";
+
+// import { useState } from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -31,7 +31,7 @@ export interface BillSummaryProps {
 }
 
 export function BillSummary({ billData }: BillSummaryProps) {
-  const [hoveredItem, setHoveredItem] = useState<number | null>(null);
+  // const [hoveredItem, setHoveredItem] = useState<number | null>(null);
 
   const totalCovered = billData.totalAmount * 0.8; // 80% covered by insurance
   const totalResponsibility = billData.totalAmount - totalCovered;
@@ -82,8 +82,8 @@ export function BillSummary({ billData }: BillSummaryProps) {
                     <motion.div
                       className="flex justify-between items-center p-2 bg-gray-700 rounded-lg cursor-pointer"
                       whileHover={{ scale: 1.02 }}
-                      onHoverStart={() => setHoveredItem(item.id)}
-                      onHoverEnd={() => setHoveredItem(null)}
+                      // onHoverStart={() => setHoveredItem(item.id)}
+                      // onHoverEnd={() => setHoveredItem(null)}
                     >
                       <span className="text-white">
                         {item.description}
