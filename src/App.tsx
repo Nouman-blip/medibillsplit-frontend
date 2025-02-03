@@ -8,6 +8,7 @@ import FAQ from './components/FAQS'
 import Pricing from './components/Pricing'
 import Footer from './components/Footers'
 import Page from './components/DemoPage'
+import Dashboard from './components/Dashboard'
 
 
 
@@ -42,11 +43,20 @@ function DemoPage() {
   )
 }
 
+function DashboardPage() {
+  return (
+    <div className=''>
+      <Dashboard />
+    </div>
+  )
+}
+
 function App() {
   return (
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/DemoPage" element={<DemoPage />} />
+        <Route path="/DashboardPage" element={<DashboardPage />} />
       </Routes>
     )
 }
