@@ -9,8 +9,8 @@ import Pricing from './components/Pricing'
 import Footer from './components/Footers'
 import Page from './components/DemoPage'
 import Dashboard from './components/Dashboard'
-
-
+import SignUpPage from './components/auth/SignUp'
+import SignIn from './components/auth/SignIn'
 
 
 function MainPage() {
@@ -24,7 +24,6 @@ function MainPage() {
       <Benefits />
       <Testimonials />
       <FAQ />
-      <Pricing />
       <Footer />
     </main>
     
@@ -51,12 +50,42 @@ function DashboardPage() {
   )
 }
 
+
+
+function LoginPage() {
+  return (
+    <div>
+      <SignIn />
+    </div>
+  )
+}
+
+function SignUp() {
+  return (
+    <div>
+      <SignUpPage />
+    </div>
+  )
+}
+
+function PricingPage() {
+  return (
+    <div>
+      
+      <Pricing />
+    </div>
+  )
+}
+
 function App() {
   return (
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/DemoPage" element={<DemoPage />} />
-        <Route path="/DashboardPage" element={<DashboardPage />} />
+        <Route path="/demo" element={<DemoPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path='/signup' element={<SignUp />} />
+        <Route path="/pricing" element={<PricingPage />} />
       </Routes>
     )
 }

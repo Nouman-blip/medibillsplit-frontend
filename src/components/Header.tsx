@@ -22,16 +22,22 @@ const Header = () => {
            
               <nav className="hidden md:block">
                 <ul className="flex space-x-8">
-                    <li><Link to="#process" className="text-medibill-muted hover:text-white transition-colors">How it Works</Link></li>
+                    <li><Link to="/demo" className="text-medibill-muted hover:text-white transition-colors">How it Works</Link></li>
                     <li><Link to="#features" className="text-medibill-muted hover:text-white transition-colors">Features</Link></li>
-                    <li><Link to="#pricing" className="text-medibill-muted hover:text-white transition-colors">Pricing</Link></li>
+                    <li><Link to="/pricing" className="text-medibill-muted hover:text-white transition-colors">Pricing</Link></li>
                 </ul>
               </nav>
             </div>
             <div className="flex items-center space-x-4">
-              <Button variant="ghost" className="text-medibill-text">Sign In</Button>
+              <Button variant="ghost" className="text-medibill-text">
+                <Link to='/login'>
+                  Sign In
+                </Link>
+              </Button>
               <Button className="bg-medibill-blue hover:bg-medibill-blue/90">
-                Try Free
+                <Link to='/checkout'>
+                  Try Free
+                </Link>
               </Button>
             </div>
           </div>
