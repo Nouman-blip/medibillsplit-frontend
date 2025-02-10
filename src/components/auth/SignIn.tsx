@@ -13,7 +13,7 @@ import {
   CardFooter,
 } from "@/components/ui/card"
 import { GoogleSignInButton } from "./GoogleAuth"
-import { Logo } from "./Logo"
+import { Logo } from "./logo"
 import { login, googleSignIn } from "@/lib/auth"
 
 export default function SignIn() {
@@ -25,7 +25,7 @@ export default function SignIn() {
     e.preventDefault()
     const result = await login(email, password)
     if (result.success) {
-      navigate("/checkout")
+      navigate("/login")
     }
   }
 

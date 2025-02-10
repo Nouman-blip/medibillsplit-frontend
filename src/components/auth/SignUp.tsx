@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { GoogleSignInButton } from "./GoogleAuth"
-import { Logo } from "./Logo"
+import { Logo } from "./logo"
 import { signUp, googleSignIn } from "@/lib/auth"
 
 export default function SignUpPage() {
