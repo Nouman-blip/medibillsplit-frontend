@@ -76,10 +76,12 @@ const Hero = () => {
                 size="lg"
                 className="bg-medibill-blue hover:bg-medibill-blue/90 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
               >
-                Start Your 30-Day Free Trial
+                <Link to='/login'>
+                    Start Your 14-Day Free Trial
+                </Link>
               </Button>
               <Button size="lg" variant="outline" className="border-white/10 hover:bg-white/10">
-                  <Link to='/DemoPage'>
+                  <Link to='/demo'>
                      Watch product Demo
                   </Link>
               </Button>
