@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { IconText } from "./ui/IconText"
-import { Mail, Phone, MapPin, Github, Twitter, Linkedin } from "lucide-react"
+import { Mail, Github, Twitter, Linkedin } from "lucide-react"
 
 const Footer = () => {
   return (
@@ -14,8 +14,6 @@ const Footer = () => {
             <p className="text-medibill-muted mb-6">Simplifying medical bill management for families worldwide.</p>
             <div className="space-y-4">
               <IconText icon={Mail} text="support@medibillsplit.com" />
-              <IconText icon={Phone} text="+1 (555) 123-4567" />
-              <IconText icon={MapPin} text="San Francisco, CA" />
             </div>
           </div>
 
