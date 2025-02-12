@@ -34,9 +34,15 @@ function MainPage() {
 
 function DemoPage() {
   return (
-    <div className=' overflow-auto bg-blue-500'>
-      {/* <Header /> */}
+    <div className='flex flex-col gap-16'>
+      <div>
+        <Header />
+      </div>
+
+      <div>
         <Page />
+      </div>
+      
     </div>
 
   )
@@ -70,12 +76,17 @@ function SignUp() {
 
 function PricingPage() {
   return (
-    <div>
-      
-      <Pricing />
+    <div className="flex flex-col gap-12">
+      <div>
+        <Header />
+      </div>
+      <div>
+        <Pricing />
+      </div>
     </div>
-  )
+  );
 }
+
 
 function App() {
   return (
